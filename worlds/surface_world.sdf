@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<sdf version="1.10">
+  <world name="mars_surface_world">
+
+    <physics name="default_physics" type="ode"/>
+
+    <light name="sun" type="directional">
+      <direction>-0.5 0.2 -1</direction>
+      <diffuse>1 1 1 1</diffuse>
+    </light>
+
+    <include>
+      <uri>model://terrain</uri>
+      <name>martian_surface</name>
+    </include>
+
+    <include>
+      <uri>model://rock</uri>
+      <name>mars_boulder_01</name>
+      <pose>5 5 -2.76 0 0 0</pose>
+    </include>
+    
+
+    <include>
+      <uri>model://rock</uri>
+      <name>mars_boulder_02</name>
+      <pose>-8 4 -4.08 0 0 0.5</pose>
+    </include>
+
+<include>
+  <uri>model://rock</uri>
+  <name>mars_boulder_03</name>
+  <pose>12 -7 5.01 0 0 1.2</pose>
+</include>
+
+<include>
+  <uri>model://rock</uri>
+  <name>mars_boulder_04</name>
+  <pose>-15 -12 -1.91 0 0 0.8</pose>
+</include>
+
+<include>
+  <uri>model://rock</uri>
+  <name>mars_boulder_05</name>
+  <pose>20 10 -2.01 0 0 2.0</pose>
+</include>
+
+<include>
+  <uri>model://rock</uri>
+  <name>mars_boulder_06</name>
+  <pose>-20 15 0.49 0 0 1.5</pose>
+</include>
+  </world>
+</sdf>
